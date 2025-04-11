@@ -1,144 +1,187 @@
 <!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Shop | MMO Clothing & Services</title>
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <style>
-            .product-image {
-                width: 150px;
-                height: auto;
-                border-radius: 8px;
-                margin: 10px;
-            }
-            .image-gallery {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="page-wrapper">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | MMO Clothing & Services</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .price-tag {
+            color: green;
+            font-weight: bold;
+        }
+        .product-section {
+            margin-bottom: 50px;
+        }
+        #header nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        #header nav a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body class="subpage">
+    <div id="page-wrapper">
 
-            <!-- Header -->
-            <section id="header">
-                <div class="container">
-                    <h1>Shop</h1>
-                    <nav id="nav">
-                        <a href="index.html">Home</a>
-                        <a href="#jerseys">Jerseys</a>
-                        <a href="#delivery">Delivery</a>
-                        <a href="#dry-cleaning">Dry Cleaning</a>
-                        <a href="#support">Support</a>
-                    </nav>
-                </div>
-            </section>
-
-            <!-- Jerseys Section -->
-            <section id="jerseys">
-                <div class="container">
-                    <header>
-                        <h2>Jerseys & Apparel</h2>
-                    </header>
-                    <p>Explore our collection of jerseys and stylish outfits for all occasions.</p>
-
-                    <!-- Retro Jerseys -->
-                    <h3>Retro Jerseys</h3>
-                    <div class="image-gallery">
-                        <img src="assets/images/retro1.jpg" alt="Retro Jersey 1" class="product-image" />
-                        <img src="assets/images/retro2.jpg" alt="Retro Jersey 2" class="product-image" />
-                        <img src="assets/images/ret3.jpg" alt="Retro Jersey 3" class="product-image" />
-                        <img src="assets/images/ret4.jpg" alt="Retro Jersey 4" class="product-image" />
+        <!-- Header -->
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1><a href="index.html" id="logo">MMO Clothing & Services</a></h1>
+                        <nav id="nav">
+                            <a href="index.html">Home</a>
+                            <a href="#jerseys">Jerseys</a>
+                            <a href="#sustainable-clothing">Clothing Line</a>
+                            <a href="#subscription-plans">Subscription Plans</a>
+                            <a href="#support">Support</a>
+                        </nav>
                     </div>
-                    <p>Price: 23k</p>
-
-                    <!-- Club Jerseys -->
-                    <h3>Club Jerseys</h3>
-                    <div class="image-gallery">
-                        <img src="assets/images/clu1.jpg" alt="Club Jersey 1" class="product-image" />
-                        <img src="assets/images/clu2.jpg" alt="Club Jersey 2" class="product-image" />
-                        <img src="assets/images/clu3.jpg" alt="Club Jersey 3" class="product-image" />
-                    </div>
-                    <p>Price: 14k</p>
-
-                    <!-- Customization -->
-                    <h3>Customization</h3>
-                    <div class="image-gallery">
-                        <img src="assets/images/cus1.jpg" alt="Customization 1" class="product-image" />
-                        <img src="assets/images/cus2.jpg" alt="Customization 2" class="product-image" />
-                        <img src="assets/images/cus3.jpg" alt="Customization 3" class="product-image" />
-                    </div>
-                    <p>Customization Fee: 4k</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Delivery Section -->
-            <section id="delivery">
-                <div class="container">
-                    <header>
-                        <h2>Fast Delivery</h2>
-                    </header>
-                    <p>Reliable and fast delivery services for your orders.</p>
-                    <h3>Pricing</h3>
-                    <ul>
-                        <li>
-                            <img src="assets/images/delivery.jpg" alt="Delivery" class="product-image" />
-                            Delivery: *Depends on location
-                        </li>
-                    </ul>
-                </div>
-            </section>
+        <!-- Content -->
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
 
-            <!-- Dry Cleaning Section -->
-            <section id="dry-cleaning">
-                <div class="container">
-                    <header>
-                        <h2>Dry Cleaning</h2>
-                    </header>
-                    <p>Professional dry cleaning services with convenient pickup and delivery.</p>
-                    <h3>Pricing</h3>
-                    <ul>
-                        <li>
-                            <img src="assets/images/shirt.jpg" alt="Shirt Cleaning" class="product-image" />
-                            Shirt: #700/clothe
-                        </li>
-                        <li>
-                            <img src="assets/images/suit.jpg" alt="Suit Cleaning" class="product-image" />
-                            Suit: #1500
-                        </li>
-                        <li>
-                            <img src="assets/images/bulk.jpg" alt="Bulk Cleaning" class="product-image" />
-                            Bulk Clothes:
+                        <!-- Jerseys Section -->
+                        <section id="jerseys" class="product-section">
+                            <header>
+                                <h2>Jerseys & Apparel</h2>
+                                <p>Explore our collection of jerseys and stylish outfits for all occasions.</p>
+                            </header>
+                            <div class="image-gallery">
+                                <img src="assets/images/retro1.jpg" alt="Retro Jersey 1" class="product-image">
+                                <img src="assets/images/retro2.jpg" alt="Retro Jersey 2" class="product-image">
+                                <img src="assets/images/ret3.jpg" alt="Retro Jersey 3" class="product-image">
+                                <img src="assets/images/d33.jpg" alt="Retro Jersey 4" class="product-image">
+                            </div>
+                            <p><strong>Price:</strong> <span class="price-tag">₦23,000</span></p>
+                        </section>
+
+                        <!-- Sustainable Clothing Section -->
+                        <section id="sustainable-clothing" class="product-section">
+                            <header>
+                                <h2>Sustainable Clothing Line</h2>
+                                <p>Explore our eco-friendly, stylish clothing collection made from organic materials.</p>
+                            </header>
+                            <div class="image-gallery">
+                                <img src="assets/images/clothing1.jpg" alt="Eco-Friendly Clothing 1" class="product-image" onerror="this.onerror=null;this.src='assets/images/default.jpg';">
+                                <img src="assets/images/clothing2.jpg" alt="Eco-Friendly Clothing 2" class="product-image" onerror="this.onerror=null;this.src='assets/images/default.jpg';">
+                                <img src="assets/images/mas.jpg" alt="Eco-Friendly Clothing 3" class="product-image" onerror="this.onerror=null;this.src='assets/images/default.jpg';">
+                            </div>
+                            <p>Prices range from <span class="price-tag">₦12,000</span> to <span class="price-tag">₦30,000</span>.</p>
+                            <a href="#sustainable-clothing" class="button-large">Shop Now</a>
+                        </section>
+
+                        <!-- Subscription Plans Section -->
+                        <section id="subscription-plans" class="product-section">
+                            <header>
+                                <h2>Subscription Plans</h2>
+                                <p>Save time and money with our weekly or monthly laundry service packages.</p>
+                            </header>
                             <ul>
-                                <li>10 Clothes: #6500</li>
-                                <li>20 Clothes: #13,500</li>
-                                <li>More than 20: #20k-30k</li>
+                                <li>Weekly Plan: ₦15,000/week for up to 2 loads</li>
+                                <li>Monthly Plan: ₦55,000/month for up to 4 loads</li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                            <a href="#booking" class="button-large">Subscribe Now</a>
+                        </section>
 
-            <!-- Support Section -->
-            <section id="support">
-                <div class="container">
-                    <header>
-                        <h2>Customer Support</h2>
-                    </header>
-                    <p>Our team is here to assist you with orders and services.</p>
-                    <h3>Contact Us</h3>
-                    <p>Email: support@mmo.com</p>
-                    <p>Phone: +123-456-7890</p>
-                </div>
-            </section>
+                        <!-- Delivery Section -->
+                        <section id="delivery" class="product-section">
+                            <header>
+                                <h2>Fast Delivery</h2>
+                                <p>Reliable and fast delivery services for your orders.</p>
+                            </header>
+                            <p>Delivery charges depend on your location. Contact us for more details.</p>
+                        </section>
 
-            <!-- Footer -->
-            <section id="footer">
-                <div class="container">
-                    <p>&copy; MMO Clothing & Services. All rights reserved.</p>
-                </div>
-            </section>
+                        <!-- Dry Cleaning Section -->
+                        <section id="dry-cleaning" class="product-section">
+                            <header>
+                                <h2>Dry Cleaning</h2>
+                                <p>Professional dry cleaning services with convenient pickup and delivery.</p>
+                            </header>
+                            <ul>
+                                <li>Shirt: ₦700/clothe</li>
+                                <li>Suit: ₦1,500</li>
+                                <li>Bulk Clothes:
+                                    <ul>
+                                        <li>10 Clothes: ₦6,500</li>
+                                        <li>20 Clothes: ₦13,500</li>
+                                        <li>More than 20: ₦20,000–₦30,000</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
 
+                        <!-- Support Section -->
+                        <section id="support" class="product-section">
+                            <header>
+                                <h2>Customer Support</h2>
+                                <p>Our team is here to assist you with orders and services.</p>
+                            </header>
+                            <p>Email: <a href="mailto:support@mmo.com">support@mmo.com</a></p>
+                            <p>Phone: +234-701-234-5678</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+                        <section>
+                            <h2>Quick Links</h2>
+                            <ul class="link-list">
+                                <li><a href="#jerseys">Jerseys</a></li>
+                                <li><a href="#sustainable-clothing">Clothing Line</a></li>
+                                <li><a href="#subscription-plans">Subscription Plans</a></li>
+                                <li><a href="#support">Support</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <section>
+                            <h2>About Us</h2>
+                            <p>MMO Clothing & Services offers premium apparel and reliable garment care for the modern shopper.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="copyright">
+            &copy; MMO Clothing & Services. All rights reserved.
         </div>
-    </body>
+    </div>
+</body>
 </html>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
